@@ -19,8 +19,8 @@ public class PrintLockABC {
             public void run()  {
                  while (true){
                      if(lock.tryLock()){
-                         condition.signal();
                          System.out.println("A");
+                         condition.signal();
                          try {
                              TimeUnit.SECONDS.sleep(1L);
                              condition.await();
@@ -37,8 +37,8 @@ public class PrintLockABC {
             public void run() {
                 while (true){
                     if(lock.tryLock()){
-                        condition.signal();
                         System.out.println("B");
+                        condition.signal();
                         try {
                             TimeUnit.SECONDS.sleep(1L);
                             condition.await();
