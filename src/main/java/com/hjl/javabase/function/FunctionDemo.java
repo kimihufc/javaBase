@@ -3,6 +3,7 @@ package com.hjl.javabase.function;
 import java.util.function.Function;
 
 /**
+ *  Function 前一个是参数 后一个是返回值
  * @author: HJL
  * @create: 2018-12-13 20:27
  */
